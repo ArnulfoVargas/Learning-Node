@@ -1,0 +1,91 @@
+h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+span{
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+}
+
+.prod-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 1rem;
+  height: fit-content;
+}
+
+.prod-container > img {
+  width: calc(50% - .5rem);
+  object-fit: contain;
+}
+
+.prod-description {
+  width: calc(50% - .5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.grow{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.prod-buttons{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  height: 40px;
+}
+.cart-btn, .buy-btn{
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: all .25s linear;
+}
+
+.cart-btn{
+  background-color: white;
+  color: indigo;
+  border: solid indigo 2px;
+}
+
+.buy-btn{
+  background-color: orange;
+  border: solid orange 2px;
+  color: white;
+}
+
+.cart-btn:hover{
+  background-color: indigo;
+  color: white;
+  border: solid indigo 2px;
+}
+
+.buy-btn:hover{
+  background-color: orangered;
+  border: solid orangered 2px;
+  color: white;
+}
+
+.price {
+  display: inline;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.price-text{
+  display: inline;
+  font-weight: 400;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2rem;
+}
